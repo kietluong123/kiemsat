@@ -396,7 +396,7 @@ function galleryPage() {
   const content = galleryItems.length
     ? `<div class="gallery-grid">${galleryItems.map((page) => `<article class="gallery-card"><a class="gallery-image" href="${routeHref(page.path)}"><img src="${escapeHTML(page.image)}" alt="${escapeHTML(page.title)}" loading="lazy" data-fallback><span class="gallery-open" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span></a><div class="gallery-caption"><span class="news-tag">${escapeHTML(page.category)}</span><h2><a href="${routeHref(page.path)}">${escapeHTML(page.title)}</a></h2><a class="section-link" href="${routeHref(page.path)}">Xem bài viết <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div></article>`).join("")}</div>`
     : `<div class="empty-state">Thư viện ảnh chưa tải được từ website nguồn trong lần kiểm tra.</div>`;
-  return `${banner("Hình ảnh hoạt động", "Một số hình ảnh được sử dụng trong các tin bài chính thức của Trường.", "Học viên – sinh viên")}${crumb("Hình ảnh hoạt động")}<section class="content-section"><div class="container"><p class="gallery-source-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Ảnh được dẫn từ các bài viết trên website Trường; chọn ảnh để mở bài viết gốc.</p>${content}</div></section>`;
+  return `${banner("Hình ảnh hoạt động", "Một số hình ảnh được sử dụng trong các tin bài chính thức của Trường.", "Học viên – sinh viên")}${crumb("Hình ảnh hoạt động")}<section class="content-section"><div class="container">${content}</div></section>`;
 }
 
 function articleListItem(page) {
