@@ -1114,7 +1114,7 @@ textarea.form-control { min-height: 135px; }
 
 /* Match the reference homepage's compact masthead and section rhythm. */
 @media (min-width: 992px) {
-  .utility-bar, .utility-bar .container { min-height: 24px; }
+  .utility-bar, .utility-bar .container { min-height: 30px; }
   .utility-bar { font-size: .68rem; }
   .brand-row { min-height: 52px; }
   .brand-logo { width: min(100%, 285px); max-height: 44px; }
